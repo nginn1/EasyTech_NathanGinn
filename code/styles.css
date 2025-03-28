@@ -181,3 +181,67 @@ button:hover {
 .logo a:hover {
     text-decoration: underline;
 }
+
+/* Tutorial Creation Form Styles */
+.tutorial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+}
+
+/* Form Box Styling */
+.tutorial-box {
+    background-color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Form Heading */
+.tutorial-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+/* Input Fields */
+input[type="text"],
+textarea {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Textarea Styling */
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+

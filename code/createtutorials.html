@@ -33,14 +33,33 @@
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <section>
-            <h2>Your Tutorial</h2>
-            <p>Title:</p>
-			<p>Device Type:</p>
-			<p>Key Function(Camera, Email, Appstore, etc.):</p>
-			<p>Main Text:</p>
+    <!-- Main Content: Create Tutorial Form -->
+    <main class="tutorial-container">
+        <section class="tutorial-box">
+            <h2>Create Your Tutorial</h2>
+			<form action="tutorialcreationsuccess.html" method="POST">
+
+            <!-- Tutorial Creation Form -->
+            <form id="tutorial-form">
+                <!-- Title -->
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter tutorial title" required>
+
+                <!-- Device Type -->
+                <label for="deviceType">Device Type:</label>
+                <input type="text" id="deviceType" name="deviceType" placeholder="Enter device type" required>
+
+                <!-- Key Function -->
+                <label for="keyFunction">Key Function (Camera, Email, Appstore, etc.):</label>
+                <input type="text" id="keyFunction" name="keyFunction" placeholder="Enter key function" required>
+
+                <!-- Main Text -->
+                <label for="mainText">Main Text:</label>
+                <textarea id="mainText" name="mainText" rows="5" placeholder="Enter the main content for the tutorial" required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Create Tutorial</button>
+            </form>
         </section>
     </main>
 
@@ -49,7 +68,10 @@
         <p>&copy; 2025 Nathan Ginn. All rights reserved.</p>
     </footer>
 
+    <!-- Link to JavaScript File -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
+
 
